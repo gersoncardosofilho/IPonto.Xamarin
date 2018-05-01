@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IPonto.Xamarin.Views.EditarPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding IdEntrada}"></Label>
+            <Entry Text="{Binding Entrada}"></Entry>
+            <Entry Text="{Binding TipoEntrada}"></Entry>
+            <Button Text="Salvar" Clicked="Button_OnClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

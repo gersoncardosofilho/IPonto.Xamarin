@@ -11,21 +11,10 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:ItemsPage />
+                <views:RegistrarPage />
             </x:Arguments>
         </NavigationPage>
         
-        <NavigationPage Title="Alterar">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_about.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
-            <x:Arguments>
-                <views:AboutPage />
-            </x:Arguments>
-        </NavigationPage>
-
         <NavigationPage Title="Visualizar">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
@@ -33,7 +22,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:AboutPage />
+                <views:VisualizarPage />
             </x:Arguments>
         </NavigationPage>
 

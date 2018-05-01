@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             x:Class="IPonto.Xamarin.Views.RegistrarPage">
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="15">
+            <Label Text="Registro de Horário" FontFamily="Segoe" FontSize="20" FontAttributes="Bold"/>
+
+            <Picker x:Name="TipoEntradaPicker" Title="Selecione o tipo de entrada" Margin="0,50,0,0">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Entrada manhã</x:String>
+                        <x:String>Saída manhã</x:String>
+                        <x:String>Entrada tarde</x:String>
+                        <x:String>Saída tarde</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <Button Text="REGISTRAR" Margin="0,100,0,0" Clicked="Button_OnClicked" ></Button>
+            
+            <ActivityIndicator x:Name="ActivityIndicator" IsVisible="True" Color="CadetBlue" IsEnabled="True"></ActivityIndicator>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
