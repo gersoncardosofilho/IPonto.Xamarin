@@ -33,7 +33,6 @@ namespace IPonto.Xamarin.Views
             var sortedEntradas = entradas.OrderBy(c => c.Dia).ToList();
 
             listView.ItemsSource = sortedEntradas;
-            listView.IsPullToRefreshEnabled = true;
 
         }
 

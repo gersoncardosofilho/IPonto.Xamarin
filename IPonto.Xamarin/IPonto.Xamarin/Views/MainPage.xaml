@@ -3,6 +3,12 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:views="clr-namespace:IPonto.Xamarin.Views"
             x:Class="IPonto.Xamarin.Views.MainPage">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Avulso" Icon="ic_note_add_white_24dp.png">
+            <ToolbarItem.Clicked></ToolbarItem.Clicked>
+        </ToolbarItem>
+    </TabbedPage.ToolbarItems>
+
     <TabbedPage.Children>
         <NavigationPage Title="Registro">
             <NavigationPage.Icon>
